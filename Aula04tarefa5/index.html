@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Números em Ordem Decrescente</title>
+</head>
+<body>
+    <h1>Números em Ordem Decrescente</h1>
+    
+    <button onclick="exibirNumerosDecrescentes()">Exibir Números</button>
+    
+    <p id="resultado"></p>
+    
+    <script>
+        function exibirNumerosDecrescentes() {
+            const resultadoElement = document.getElementById("resultado");
+            resultadoElement.innerHTML = ""; // Limpar resultados anteriores
+
+            for (let i = 100; i >= 1; i--) {
+                resultadoElement.innerHTML += i + "<br>";
+            }
+        }
+    </script>
+</body>
+</html>
